@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Crimson Text', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#nav .nav {
+    background: rgb(82, 82, 100);
+    background: linear-gradient(90deg, rgba(82, 82, 100, 1) 0%, rgba(179, 171, 202, 0.9981034650188201) 0%, rgba(168, 176, 210, 1) 85%);
+    background: linear-gradient(90deg, rgba(82, 82, 100, 1) 0%, rgba(104, 132, 75, 0.9981034650188201) 0%, rgba(168, 176, 210, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#nav .nav h1 {
+    margin-left: 120px;
+    font-weight: 1200;
+}
+
+#nav .nav ul li {
+    padding: 30px 35px;
+    display: inline-block;
+    list-style: none;
+}
+
+#nav .nav ul a {
+    text-decoration: none;
+    font-weight: 1000;
+    position: relative;
+    color: black;
+}
+
+#nav .nav ul a:after {
+    content: "";
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    width: 0%;
+    left: 50%;
+    bottom: -5px;
+    transition: 0.3s ease-out;
+}
+
+#nav .nav ul a:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.right-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.right-nav p a {
+    padding: 15px 20px;
+    font-weight: 1000;
+    position: relative;
+    color: black;
+    text-decoration: none;
+}
+
+.right-nav p a:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 0%;
+    background-color: crimson;
+    left: 50%;
+    bottom: 10px;
+    transition: 0.3s ease-out;
+}
+
+.right-nav p a:hover:after {
+    left: 0;
+    width: 100%;
+}
+
+.carousel-item img {
+    width: 100vw;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgb(209, 214, 213);
+    opacity: 0.8;
+    font-weight: 700;
+    border-radius: 30px;
+}
+
+.carousel-caption h5 {
+    font-weight: 1000;
+}
+
+.arrival {
+    margin-top: 50px;
+}
+
+.arr-caption {
+    margin-left: 50px;
+    font-weight: 500;
+}
+
+.arrival-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.arrival-item {
+    margin: 30px;
+}
+
+.arrival-item p {
+    text-align: center;
+}
+
+.arrival-item img {
+    height: 150px;
+    width: 150px;
+    object-fit: ;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.clothing {
+    margin: 30px;
+    display: flex;
+}
+
+.clothing .card {
+    margin: 30px;
+}
+
+.clothing .card img {
+    height: 200px;
+    width: auto;
+}
+
+.footer {
+    background: rgb(82, 82, 100);
+    background: linear-gradient(90deg, rgba(82, 82, 100, 1) 0%, rgba(179, 171, 202, 0.9981034650188201) 0%, rgba(168, 176, 210, 1) 85%);
+    background: linear-gradient(90deg, rgba(82, 82, 100, 1) 0%, rgba(104, 132, 75, 0.9981034650188201) 0%, rgba(168, 176, 210, 1) 100%);
+    margin: 0;
+}
+
+.footer .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+}
